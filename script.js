@@ -35,6 +35,7 @@ addBtn.addEventListener("click", () => {
 
     else{
         nagativeAmmount = nagativeAmmount + ammount;
+    // let finalNagativeAmmount = localStorage.setItem("locNagativeAmmount" , )
         expenseValue.innerText = "$ " + nagativeAmmount + ".00";
         localStorage.setItem("totalExpense",nagativeAmmount);
         tAmmount = tAmmount + ammount;
@@ -120,6 +121,9 @@ function addData(){
 let refreshBtn = document.querySelector(".refresh-btn");
 
 refreshBtn.addEventListener("click" ,() => {
+    if(positiveAmmout !== 0 || nagativeAmmount !== 0){
+    if(confirm("⚠️ Warning! All data will be lost. Refresh now?")){
+
     positiveAmmout = 0;
     incomeValue.innerText =  "$ " + positiveAmmout + ".00";
     localStorage.setItem("totalIncome", positiveAmmout);
@@ -134,6 +138,8 @@ refreshBtn.addEventListener("click" ,() => {
 
     historyContainer.innerHTML = "";
     addData();
+    }
+}
     
 })
 
@@ -151,6 +157,10 @@ function showData(){
     expenseValue.innerText = "$ " + finalTotalExpense + ".00";
     totalAmmount.innerText = "$ " + finalTotalAmmount + ".00";
     historyContainer.innerHTML = finalHistory;
+
+    positiveAmmout = finalTotalINcome;
+    nagativeAmmount = finalTotalExpense;
+    tAmmount = finalTotalAmmount;
 }
 
 showData();
