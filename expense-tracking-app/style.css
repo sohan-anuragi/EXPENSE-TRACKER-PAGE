@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+/* styling for BODY TAG */
+
+body {
+    background-color: rgba(141, 205, 192, 0.518);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("back.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* styling for CONTAINER  */
+
+.container{
+    min-width: 450px;
+    margin-top: 10px;
+    padding: 30px;
+    padding-top: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.544);
+    min-height: 400px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.043);
+}
+
+/* responsive for mobile */
+
+@media (max-width:768px){
+    .container{
+        width: 100%;
+        max-width: 340px;
+        min-width: auto;
+    }
+}
+
+.top-heading{
+    text-align: center;
+    font-size: 1.7rem;
+    color: rgb(187, 187, 228);
+}
+
+.top-heading::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(197, 193, 193, 0.518);
+    margin: 10px auto;
+}
+
+/* styling for Your-Balance section */
+
+.heading2{
+    padding-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.47);
+}
+
+.total-ammount{
+    padding-left: 30px;
+    font-weight: 550;
+    font-size: 2.3rem;
+    margin-top: 5px;
+    color: rgb(127, 127, 202);
+    margin-bottom: 10px;
+}
+
+/* styling for INCOME-EXPENSE SECTION */
+
+.income-expense{
+    border-radius: 5px;
+    background-color: rgba(250, 243, 243, 0.059);
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 10px;
+    border-top: 1px;
+    border-left: 1px;
+    border-bottom: 2px;
+    border-right: 1px;
+    border-color: rgba(214, 207, 207, 0.433);
+    border-style: solid;
+    margin-top: 20px;
+}
+
+.income{
+    min-height: 80px;
+    width: 50%;
+    border-right: 2px solid rgba(128, 128, 128, 0.48);
+}
+
+.expense{
+    min-height: 80px;
+    width: 50%;
+}
+
+.common1{
+    text-align: center;
+    font-weight: 550;
+    font-size: 1rem;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.426);
+}
+
+.common2{
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* styling for HISTORY-SECTION */
+
+.heading3{
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(108, 105, 105);
+    color: rgba(255, 255, 255, 0.449);
+}
+
+.history-container li{
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.169);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: rgb(8, 8, 71);
+    font-size: 0.9rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* border-right:5px solid green; */
+    border-bottom: 2px solid gray;
+    border-left: 0.7px solid gray;
+    border-top: 0.7px solid gray;
+    
+}
+
+.cross-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    position: absolute;
+    left: -15px;
+    background-image: url("cross.webp"); 
+    background-size: cover;
+    display: none;
+    font-size: 1rem;
+}
+
+.cross-btn2{
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+    position: absolute;
+    left: -25px;
+    background-image: url("cross.webp");
+    background-size: cover;
+    border: 1px solid rgba(255, 0, 0, 0.543);
+    display: block;
+}
+
+.span-value{
+  width: auto;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+/* styling for ADD YOUR TRASANCTION SECTION  */
+
+.heading4{
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-weight: 550;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(108, 94, 94);
+    color: rgba(255, 255, 255, 0.454);
+}
+
+.heading5{
+    margin-top: 30px;
+    padding-left: 10px;
+    font-weight: 550;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.462);
+}
+
+.name{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: 1px;
+    color: rgba(255, 255, 255, 0.437);
+    background-color: rgba(255, 255, 255, 0.067);
+    
+}
+
+.heading6{
+    margin-top: 30px;
+    padding-left: 10px;
+    font-weight: 550;
+    margin-bottom: 15px;
+    color:rgba(255, 255, 255, 0.446);
+}
+
+.ammount{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: 1px;
+    color: rgba(255, 255, 255, 0.432);
+    background-color: rgba(255, 255, 255, 0.063);
+}
+
+/* styling for ADD-BUTTON */
+
+.add-btn{
+    margin: 30px auto;
+    margin-bottom: 0px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: rgba(153, 164, 166, 0.441);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* styling for REFRESH-BTN */
+
+.refresh-btn{
+    height: 30px;
+    width: 8rem;
+    margin-top: 40px;
+    position: relative;
+    right: -30%;
+    border: none;
+    outline: none;
+    background-color: rgba(135, 152, 168, 0.425);
+    color: white;
+    border-radius: 2px;
+
+}

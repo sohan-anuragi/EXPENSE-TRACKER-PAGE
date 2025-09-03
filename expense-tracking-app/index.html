@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense-Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="container">
+      <h2 class="top-heading">Expense-Tracker</h2>
+      <P class="heading2">YOUR BALANCE</P>
+      <div class="total-ammount">$00.00</div>
+
+      <div class="income-expense">
+        <div class="income">
+          <p class="income-heading common1">INCOME</p>
+          <p class="income-value common2" style="color: rgb(161, 229, 161);">$00.00</p>
+        </div>
+        <div class="expense">
+          <p class="expense-heading common1">EXPENSE</p>
+          <p class="expense-value common2" style="color: rgb(210, 140, 140);">$00.00</p>
+        </div>
+      </div>
+
+      <div class="heading4">Add New Transatction</div>
+      <div class="heading5">Name</div>
+      <input value="" placeholder="write here" type="text" class="name">
+      <div class="heading6">Amount</div>
+      <input value="" placeholder="write here" type="number" class="ammount">
+
+      <button class="add-btn">Add Transatction</button>
+
+      <div class="heading3">HISTORY</div>
+      <ul class="history-container">
+        <!-- <li>your transatction  <span class="span-value">15000</span></li>
+        <li>your transatction  <span class="span-value">-15000</span> </li>
+        <li>your transatction </li>
+        <li>your transatction </li>
+        <li>your transatction </li> -->
+      </ul>
+
+      <button class="refresh-btn">Refresh</button>
+      
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"timeline.pageOnScroll": true,
+		"explorer.compactFolders": false
+	}
+}
