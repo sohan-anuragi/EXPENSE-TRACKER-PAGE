@@ -15,14 +15,16 @@ let nagativeAmmount = 0;
 
 
 addBtn.addEventListener("click", () => {
-    let ammount = parseInt(inputAmmount.value);
+    let ammount = (inputAmmount.value === "")? 0 : parseInt(inputAmmount.value);
    
 
-    if( inputName.value === "" || inputName === ""){
+    if( inputName.value === "" || inputName === ""  ){
         alert("please input the ammount and name of Transaction");
     }
 
-    else if(inputAmmount.value >= 0 ){
+    else{
+
+        if(inputAmmount.value >= 0 ){
         positiveAmmout = positiveAmmout + ammount
         incomeValue.innerText =  "$ " + positiveAmmout + ".00";
         localStorage.setItem("totalIncome", positiveAmmout);
@@ -43,6 +45,8 @@ addBtn.addEventListener("click", () => {
         totalAmmount.innerText = "$ " + tAmmount + ".00";
         localStorage.setItem("totalAmmount",tAmmount);
         inputAmmount.value = "";
+
+}
         
         
 })
